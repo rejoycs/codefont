@@ -6,9 +6,9 @@
 
 ---
 
-## Overview
+## Abstract
 
-CoDeFont is a research project in computer vision and generative modeling. This repository contains the implementation, training and inference entry points, model components, data-loading utilities, and loss functions.
+One-shot Font Generation (OFG) aims to synthesize a target glyph by transferring the stylistic characteristics of a single reference glyph while preserving the structure of the target character. However, accurately capturing font style from a single reference image remains challenging due to the limited stylistic information available in a single glyph, and this challenge is further amplified for complex scripts. We propose CoDeFont, a script-agnostic OFG framework that addresses this challenge through multi-level style-content factorization and progressive style-content reconciliation. CoDeFont independently aggregates complementary style and structural information across multiple spatial levels to obtain factor-specific representations, while a contrastive objective explicitly encourages separation between style and content embeddings. During reconstruction, the disentangled representations are progressively injected through multi-level style conditioning, enabling stylistic information to be incorporated at different decoding resolutions while preserving the underlying glyph structure. We evaluate CoDeFont on structurally distinct Bengali and Latin scripts across seen and unseen font styles. Extensive quantitative and qualitative analyses demonstrate consistent improvements over existing state-of-the-art methods, highlighting the effectiveness of the proposed framework for OFG across diverse writing systems.
 
 ## Visual Results
 
